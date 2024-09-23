@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+header{
+   
+
+    
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+header nav li:first-child{
+    margin-right: auto;
+}
+
+
+
+
+header nav ul {
+    width: 100%;
+    list-style: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.8s ease-in-out;    
+}
+
+header.scrolled nav ul{
+    background-color: rgba(255, 255, 255, 0.589);
+    opacity: 0.98;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+header.scrolled nav ul li a{
+    color: black
+}
+
+
+
+header nav ul li a:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.921);
+}
+
+header nav li{
+    height: 45px;
+}
+
+header nav li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: white;
+    transition: color 0.4s ease-in-out;
+
+}
+
+
+
+
+
+.sidebar{
+    position: fixed;
+    top: 2.5rem;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    
+    background-color: rgba(0, 0, 0, 0.174);
+    backdrop-filter: blur(-10px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.sidebar li:hover{
+  
+}
+
+.sidebar li{
+    width: 100%;
+    
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+header.scrolled .sidebar {
+    
+    background-color: rgba(24, 25, 24, 0.64);
+    
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    top: 2.7rem;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+
+header.scrolled .sidebar li a{
+    color: white;
+}
+
+header.scrolled .sidebar li a:hover{
+    color: black;
+}
+
+/* Home css style area*/
+
+#home{
+    height: 100vh;
+   width: 100%;
+   
+}
+
+.home_page{
+    background: url(Images/HomeCoffee2.jpg)center center;
+    
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+
+.home_text{
+    padding-top: 300px;
+    color: aliceblue;
+}
+
+.home_page .btn .btn{
+    
+    background-color: rgba(240, 248, 255, 0.29);
+    color: white;
+    border-radius: 15px;
+    
+    
+    
+}
+
+
+/* About page css */
+
+.about_page{
+    padding-top: 5px;
+    margin-top: 5px;
+    
+    
+   
+    
+    background-color: rgba(239, 239, 239, 0.322);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  
+}
+
+.about_page .about_img{
+    background:url(Images/Abcard3.jpg)no-repeat center center;
+   
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 350px;
+    
+}
+
+/*Menu page css*/
+
+.Menu_page .card{
+    padding: 5px 5px;
+    margin: 2px 2px;
+    background-color: rgba(177, 177, 177, 0.214);
+}
+
+.Menu_page .card img{
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+}
+.Menu_page div .card:hover{
+    display: zoom;
+    background-color: white;
+   
+   
+    align-items: center;
+}
+
+
+/*Offer Page*/
+
+.offer_page .row{
+    background: url(Images/Abg2.jpg) no-repeat center;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+/* Contact page */
+
+.contact_page .btn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/*Footer page */
+
+.footer_page{
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: url(Images/Abcard1.jpg)center center no-repeat;
+    background-size: cover;
+
+}
+
+.footer_page a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_page a:hover{
+    color: gainsboro;
+}
+
+.footer_page ul li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 200;
+
+}
+
+.footer_page ul li:hover{
+    color: gray;
+}
+
+.footer_page .footer_end_border{
+    border: 0.5px double white;
+    font-size: x-small;
+    
+    
+   
+}
+
+.footer_text{
+    font-size: small;
+    font-weight: 100;
+    
+}
+
+
+
+/* media css*/
+
+@media(max-width:800px) {
+    .hidemoblie{
+        display: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+
+  
+    
+}
+
+@media(min-width:800px) {
+
+    .sideMenuIcon{
+        display: none;
+    }
+    
+}
