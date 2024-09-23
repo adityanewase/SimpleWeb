@@ -1,0 +1,368 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+*,
+*:after,
+*:before
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+    height: 0.625rem;
+
+}
+::-webkit-scrollbar-track{
+    background:var(--background-color-white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--bs-gray-paragraph);
+}
+
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+
+
+
+:root{
+    --orange-color: #ff5821;
+    --background-color-white: #ffffff;
+    --bg-or-wht: #fffaf9;
+    --default-color: #212529;
+    --bs-gray-paragraph: #6c757d;
+    --bs-red: #dc3545;
+
+
+    --heading1: #555;
+    --text-gray: #999;
+    --surface-color: #ffffff;
+    
+
+}
+
+
+.btn{
+
+}
+
+h1{
+    color: var(--heading1);
+    font-weight: 400;
+    text-shadow: #212529;
+    font-family: sans-serif;
+    
+}
+
+
+p{
+    color: var(--bs-gray);
+}
+
+
+
+                                /*header Area CSS*/
+.navbar{
+    
+}
+.navbar .navbar-brand{
+    color: var(--orange-color);
+    font-size:x-large;
+    font-weight: 500;
+    border: 1px solid var(--bs-gray-paragraph);
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+.navbar .navbar-brand:hover{
+    color: var(--bs-gray-paragraph);
+}
+
+.navbar .navbar-brand i{
+    color: #cefefb;
+}
+
+.navbar .nav-item a{
+    color: #555;
+   
+}
+
+.navbar .nav-item a:hover{
+    color: var(--orange-color);
+}
+
+
+                                 /* Home CSS*/
+.home_page{
+    
+   background: url(images/bgHome2.jpg) center center no-repeat;
+   background-size: cover;
+   width: 100%;
+   color: #fffaf9;
+   background-color: var();
+  
+   
+}
+
+.home_page h1{
+    color: white;
+}
+   
+.home_page .class_col1 .card{
+    background-color: var(--orange-color);
+    color: white;
+    
+}
+
+.home_page .class_col1 p{
+    color: #fffaf9;
+    text-align: center;
+    font-size: 15px;
+    
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home_page .class_col1 button{
+   
+
+   color: var(--text-gray);
+   background-color: #fffaf9;
+   opacity: 0.6;
+   border-radius: 20px;
+   border: 1px solid var(--default-color);
+   
+
+}
+
+.home_page .class_col1 button:hover{
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.home_page .class_col2 .card{
+    
+    color: var(--bg-or-wht);
+    background-color: var(--default-color);
+    opacity: 0.8;
+}
+
+.home_page .class_col2 .card p{
+    color: var(--surface-color);
+}
+
+.home_page .class_col2 .card i{
+    color: var(--orange-color);
+    font-size: xx-large;
+    font-weight: 100;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+
+                        /* About Section*/
+
+.about_page{
+   background-color: var(--bg-or-wht);
+}
+
+
+.about_page .card img{
+    opacity: 0.6;
+    color: #555;
+    background-size: cover;
+  
+    width: 100%;
+   
+   
+}
+
+.about_page .col2 i{
+   
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--orange-color);
+    margin: 10px;   
+   
+}
+
+                  /*Team page CSs*/
+ .team_page .card:hover{
+    border: 1px solid var(--bs-gray-paragraph);
+ }
+
+ .team_page .card-title {
+    color: #6c757d;
+    font-size: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+ }
+
+ .team_page .card-text{
+    color: var(--default-color);
+   
+    margin-top: -10px;
+ }
+
+ .advertisement{
+    color: wheat;
+    background: url(images/bgAdvts2.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 0 .7525rem;
+    padding: 3rem;
+
+ }
+
+
+                                    /* Service page css part */
+
+.services_page{
+    background-color: var(--bg-or-wht);
+}
+
+
+.services_data i{
+    
+   
+    background: var(--orange-color);
+    color: var(--bg-or-wht);
+    margin: 0;
+    width: 72px;
+    height: 72px;
+    border: 1px solid var(--orange-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+    position: absolute;
+    top: -36px;
+    right: 42%;
+
+    
+
+}
+
+.services_data .card i:hover {
+    background-color: var(--bg-or-wht);
+    
+    color: var(--orange-color);
+    
+    transition: all ease-in-out 0.3s;
+   
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    text-align: center;
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    transition: ease-in-out 0.3s;
+    top: -36px;
+    right: 42%;
+
+}
+
+
+
+.services_data .card:hover{
+    color: var(--orange-color);
+    background-color: var(--bg-or-wht);
+    
+}
+
+/* contact page Css*/
+
+
+
+.contact_page .Row_class i{
+    font-size: 40px;
+    text-align: center;
+    margin: 5px;
+    justify-content: center;
+    color: var(--orange-color);
+    justify-content: space-between;
+    
+}
+
+.contact_page .Row_class div{
+    background-color: var(--bg-or-wht);
+   
+   padding: 2px;
+   margin: 2px;
+    
+    
+  
+}
+
+.contact_page .contact_col2 .btn button{
+   width: 150px;
+    
+}
+
+.contact_page .contact_col2 .btn button:hover{
+    background-color: var(--orange-color);
+    color: var(--default-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    border-color: #212529;
+}
+@media (max-width:700px){
+    .contact_page .contact_col1 .col-lg-6{
+        margin-left: 0px;
+        width: 500px;
+    }
+
+}
+
+
+.footer_page{
+    background-color: var(--bg-or-wht);
+}
+
+.footer_page .d-flex div i{
+    color: var(--bs-gray-paragraph);
+    font-size: 20px;
+    font-weight: 100;
+    font: optional;
+    border: 1px solid var(--bs-gray-paragraph);
+    border-radius: 17px;
+    padding: 8px;
+    margin: 10px;
+
+}
+
+.footer_page .d-flex div i:hover{
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    
+}
+
+.footer_page .useful a{
+    
+    text-decoration: none;
+    color: var(--bs-gray-paragraph);
+}
+
+.footer_page .useful a:hover{
+    color: var(--orange-color);
+}
